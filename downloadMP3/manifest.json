@@ -1,0 +1,22 @@
+{
+    "name": "Download MP3",
+    "manifest_version": 3,
+    "permissions": [
+        "scripting"
+    ],
+    "version": "2.0",
+    "action": {
+        "default_title": "Download MP3 From Youtube Extension"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/*"
+            ],
+            "js": [
+                "/js/jquery.js",
+                "/js/custom.js"
+            ]
+        }
+    ]
+}
